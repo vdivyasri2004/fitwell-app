@@ -14,23 +14,102 @@ FitWell is a mobile-first wellness and fitness app with:
 
 ## Screenshots
 
-Showcase of the core user journey, from sign-in to a completed profile and the
-main tracking screens (phone-shaped captures at 390×844).
+A quick visual walkthrough of the app, from the first run to daily tracking
+(phone-shaped captures at 390×844). Each slide explains what you're seeing and
+how that part of the app works.
 
-| | |
-|:---:|:---:|
-| **Onboarding — About You** | **Onboarding — Goals & Diet** |
-| Personal details (name, age, gender, height, weight) | Fitness goal, dietary preference, and food exclusions |
-| ![Onboarding](screenshots/05-onboarding-about.png) | ![Goals](screenshots/07-onboarding-goals.png) |
-| **Home Dashboard** | **Nutrition** |
-| Animated activity rings, live calorie/protein/water targets | Daily calorie intake vs. goal, macro breakdown |
-| ![Home](screenshots/09-home.png) | ![Nutrition](screenshots/10-nutrition.png) |
-| **Workout** | **Progress** |
-| Live workout timer, recommended workouts, est. burn | Activity trends over 7/30/90 days, averages |
-| ![Workout](screenshots/11-workout.png) | ![Progress](screenshots/12-progress.png) |
-| **Profile & Targets** | |
-| Saved profile with calculated daily targets | |
-| ![Profile](screenshots/13-profile.png) | |
+---
+
+### 1. Onboarding — About You
+
+![Onboarding — About You](screenshots/05-onboarding-about.png)
+
+What it is: the first step of the setup wizard a new user completes.
+
+How it works: FitWell needs a little about you — **full name, age, gender,
+height, and weight** — to make every goal personal. None of this is shared with
+anyone; it stays in the app's own local database. Everything is optional-friendly
+and clearly labeled as estimates, not medical advice.
+
+---
+
+### 2. Onboarding — Goals & Diet
+
+![Onboarding — Goals & Diet](screenshots/07-onboarding-goals.png)
+
+What it is: step three of the wizard, where the app learns what you're trying to
+achieve.
+
+How it works: you pick a **fitness goal** (e.g. lose weight), a **dietary
+preference** (e.g. balanced, vegetarian, vegan), and any **food exclusions or
+allergies**. FitWell uses these to compute your daily targets and to power its
+recommendation engine — so the meals and workouts you're shown actually fit your
+goals and restrictions.
+
+---
+
+### 3. Home Dashboard
+
+![Home Dashboard](screenshots/09-home.png)
+
+What it is: the main screen you land on each day.
+
+How it works: the **animated activity rings** show your progress toward your
+daily **calorie, protein, and water** targets at a glance. Cards below surface
+your recommended meal, today's workout, and a personal insight — all generated
+from your profile and your logged activity for that day.
+
+---
+
+### 4. Nutrition
+
+![Nutrition](screenshots/10-nutrition.png)
+
+What it is: the daily food tracker.
+
+How it works: it shows the **calories you've consumed today versus your goal**
+(here 0 kcal of 2,058) plus your **macro breakdown** (protein, carbs, and fat).
+Tap **Log Food** to add a meal from the built-in food library, and **History** to
+review past days.
+
+---
+
+### 5. Workout
+
+![Workout](screenshots/11-workout.png)
+
+What it is: the workout tracker with a live timer.
+
+How it works: the **live workout timer** tracks your session in real time with an
+estimated calorie burn, while the **"Recommended for you"** section suggests
+workouts matched to your goal and fitness level. Start a routine, follow along,
+and finish to log it to your history.
+
+---
+
+### 6. Progress
+
+![Progress](screenshots/12-progress.png)
+
+What it is: your long-term view of activity.
+
+How it works: it charts your **average calories, protein, water, and sleep** over
+**7 / 30 / 90-day** windows, along with **workouts completed** and **weight
+change** over time — so you can see real trends, not just today's numbers.
+
+---
+
+### 7. Profile & Targets
+
+![Profile & Targets](screenshots/13-profile.png)
+
+What it is: your saved personal details and calculated goals.
+
+How it works: this summarizes everything FitWell knows about you — age, gender,
+height, weight, activity level, and diet — alongside the **daily targets it
+calculated** from that profile. You can sign out or edit your details from here.
+
+---
 
 All screenshots are also available individually in the **`screenshots/`** folder.
 The demo login used in the captures is `admin@fitwell.local` / `admin123`.
