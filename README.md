@@ -82,6 +82,12 @@ email:    admin@fitwell.local
 password: admin123
 ```
 
+> **Is this credential safe to publish?** Yes. This is a **local, demo-only** seed
+> account created fresh on *every* machine that runs the code — it does **not**
+> exist on any shared/cloud server and protects nothing. Each person who clones
+> the repo gets their own local copy of it. It's provided purely so you can sign
+> into the admin dashboard immediately after first boot.
+
 Sign in as this account on the admin dashboard to manage data and promote/demote
 users. On the mobile app you can either create a new account or sign in with any
 account (a normal, non-admin user).
@@ -166,6 +172,12 @@ Configuration is optional via environment variables (see `server/.env.example`):
 - **Auth:** passwords are hashed with Node's `crypto.scrypt`. A successful
   login/register returns a JWT which the app stores and sends as
   `Authorization: Bearer <token>`.
+
+  > **Note:** If no `FITWELL_JWT_SECRET` is set, the server falls back to a
+  > fixed local-dev secret (`fitwell-local-dev-secret-change-me`). This is safe
+  > because the server runs only on the user's own machine against their own
+  > local database — but you should set `FITWELL_JWT_SECRET` in `server/.env`
+  > for any long-running or shared deployment.
 - **Per-user data isolation (replaces RLS):** every user-data route derives the
   user id from the verified token and scopes all queries by it. The server
   ignores any user id the client supplies.
