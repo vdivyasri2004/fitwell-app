@@ -264,3 +264,13 @@ verify the admin role in the database — never the client.
   `server/src/routes/`).
 
 See `ASSUMPTIONS.md` for documented design decisions and limitations.
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+> Note: `mobile/LICENSE` is the MIT notice that ships with the Expo template
+> and governs that template code; your own project's terms are the root
+> `LICENSE` above.
