@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+web-build/
+build/
+coverage/
+
+# Environment files (contain credentials / local URLs)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Expo
+.expo/
+expo-env.d.ts
+.metro-health-check*
+
+# Native generated folders
+/ios
+/android
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# SQLite database (runtime data)
+server/data/*.db
+server/data/*.db-*
+
+# Bundled screenshot zip (source PNGs in screenshots/ are kept)
+screenshots-all.zip
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
