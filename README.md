@@ -188,6 +188,19 @@ account (a normal, non-admin user).
 > **Service manager:** `manage.sh` also supports a single service:
 > `./manage.sh api start|stop|status`, and the same for `admin`, `mobile`, `static`.
 
+### Ports
+
+| Service | URL |
+|---------|-----|
+| API (Express/SQLite) | http://localhost:4000 |
+| Admin dashboard (Vite dev) | http://localhost:5173 |
+| Mobile app (Expo dev web) | http://localhost:8081 |
+| Mobile app (static export) | http://localhost:19006 |
+
+> The admin dev server occupies port **5173** via `--strictPort`. If another local
+> Vite project (e.g. Customer Support Intelligence) is already running on 5173,
+> stop that app first, or run the admin on a different port, before starting it.
+
 ---
 
 ## Repository layout
